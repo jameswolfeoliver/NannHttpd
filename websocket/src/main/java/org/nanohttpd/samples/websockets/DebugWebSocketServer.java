@@ -33,15 +33,15 @@ package org.nanohttpd.samples.websockets;
  * #L%
  */
 
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 import org.nanohttpd.protocols.http.IHTTPSession;
 import org.nanohttpd.protocols.websockets.CloseCode;
 import org.nanohttpd.protocols.websockets.NanoWSD;
 import org.nanohttpd.protocols.websockets.WebSocket;
 import org.nanohttpd.protocols.websockets.WebSocketFrame;
+
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * @author Paul S. Hawke (paul.hawke@gmail.com) On: 4/23/14 at 10:31 PM

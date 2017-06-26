@@ -33,8 +33,10 @@ package org.nanohttpd.junit.protocols.http;
  * #L%
  */
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import org.junit.Test;
+import org.nanohttpd.protocols.http.HTTPSession;
+import org.nanohttpd.protocols.http.content.CookieHandler;
+import org.nanohttpd.protocols.http.response.Response;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -47,10 +49,8 @@ import java.util.Locale;
 import java.util.Set;
 import java.util.TimeZone;
 
-import org.junit.Test;
-import org.nanohttpd.protocols.http.HTTPSession;
-import org.nanohttpd.protocols.http.content.CookieHandler;
-import org.nanohttpd.protocols.http.response.Response;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class CookieHandlerTest extends HttpServerTest {
 

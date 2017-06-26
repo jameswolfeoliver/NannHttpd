@@ -33,12 +33,6 @@ package org.nanohttpd.junit.protocols.http.integration;
  * #L%
  */
 
-import static org.junit.Assert.assertEquals;
-
-import java.io.DataInputStream;
-import java.io.IOException;
-import java.util.Map;
-
 import org.apache.http.client.ResponseHandler;
 import org.apache.http.client.methods.HttpPut;
 import org.apache.http.entity.ByteArrayEntity;
@@ -49,6 +43,12 @@ import org.nanohttpd.protocols.http.NanoHTTPD;
 import org.nanohttpd.protocols.http.request.Method;
 import org.nanohttpd.protocols.http.response.Response;
 import org.nanohttpd.protocols.http.response.Status;
+
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.util.Map;
+
+import static org.junit.Assert.assertEquals;
 
 public class PutStreamIntegrationTest extends IntegrationTestBase<PutStreamIntegrationTest.TestServer> {
 

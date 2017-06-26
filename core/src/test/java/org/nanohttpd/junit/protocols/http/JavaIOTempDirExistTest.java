@@ -33,14 +33,14 @@ package org.nanohttpd.junit.protocols.http;
  * #L%
  */
 
-import java.io.File;
-import java.io.IOException;
-import java.util.UUID;
-
 import org.junit.Assert;
 import org.junit.Test;
 import org.nanohttpd.protocols.http.tempfiles.DefaultTempFile;
 import org.nanohttpd.protocols.http.tempfiles.DefaultTempFileManager;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.UUID;
 
 /**
  * Created by Victor Nikiforov on 10/16/15.

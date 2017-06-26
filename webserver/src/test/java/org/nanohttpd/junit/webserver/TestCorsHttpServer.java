@@ -33,9 +33,6 @@ package org.nanohttpd.junit.webserver;
  * #L%
  */
 
-import java.io.PipedInputStream;
-import java.io.PipedOutputStream;
-
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -47,6 +44,9 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.nanohttpd.webserver.SimpleWebServer;
+
+import java.io.PipedInputStream;
+import java.io.PipedOutputStream;
 
 /**
  * @author Matthieu Brouillard [matthieu@brouillard.fr]

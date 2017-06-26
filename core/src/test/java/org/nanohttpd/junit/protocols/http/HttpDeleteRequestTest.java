@@ -33,13 +33,13 @@ package org.nanohttpd.junit.protocols.http;
  * #L%
  */
 
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
-
 import org.junit.Test;
 import org.nanohttpd.protocols.http.NanoHTTPD;
 import org.nanohttpd.protocols.http.response.Response;
 import org.nanohttpd.protocols.http.response.Status;
+
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
 
 public class HttpDeleteRequestTest extends HttpServerTest {
 

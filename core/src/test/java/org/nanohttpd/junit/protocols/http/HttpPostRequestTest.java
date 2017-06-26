@@ -33,7 +33,7 @@ package org.nanohttpd.junit.protocols.http;
  * #L%
  */
 
-import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -42,7 +42,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 public class HttpPostRequestTest extends HttpServerTest {
 

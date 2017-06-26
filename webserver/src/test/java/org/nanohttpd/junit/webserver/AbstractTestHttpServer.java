@@ -33,11 +33,11 @@ package org.nanohttpd.junit.webserver;
  * #L%
  */
 
+import org.apache.http.HttpEntity;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-
-import org.apache.http.HttpEntity;
 
 /**
  * @author Matthieu Brouillard [matthieu@brouillard.fr]

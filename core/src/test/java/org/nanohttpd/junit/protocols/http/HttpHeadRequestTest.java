@@ -33,16 +33,16 @@ package org.nanohttpd.junit.protocols.http;
  * #L%
  */
 
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertNotNull;
-import static junit.framework.Assert.assertTrue;
+import org.junit.Test;
+import org.nanohttpd.protocols.http.request.Method;
+import org.nanohttpd.protocols.http.response.Response;
 
 import java.io.ByteArrayOutputStream;
 import java.util.List;
 
-import org.junit.Test;
-import org.nanohttpd.protocols.http.request.Method;
-import org.nanohttpd.protocols.http.response.Response;
+import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertNotNull;
+import static junit.framework.Assert.assertTrue;
 
 public class HttpHeadRequestTest extends HttpServerTest {
 

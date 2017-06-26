@@ -33,9 +33,6 @@ package org.nanohttpd.junit.protocols.http;
  * #L%
  */
 
-import java.io.File;
-import java.io.IOException;
-
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
@@ -46,6 +43,9 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.nanohttpd.protocols.http.NanoHTTPD;
+
+import java.io.File;
+import java.io.IOException;
 
 public class HttpSSLServerTest extends HttpServerTest {
 

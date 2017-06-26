@@ -33,14 +33,14 @@ package org.nanohttpd.samples.http;
  * #L%
  */
 
-import java.util.Map;
-import java.util.logging.Logger;
-
 import org.nanohttpd.protocols.http.IHTTPSession;
 import org.nanohttpd.protocols.http.NanoHTTPD;
 import org.nanohttpd.protocols.http.request.Method;
 import org.nanohttpd.protocols.http.response.Response;
 import org.nanohttpd.util.ServerRunner;
+
+import java.util.Map;
+import java.util.logging.Logger;
 
 /**
  * An example of subclassing NanoHTTPD to make a custom HTTP server.

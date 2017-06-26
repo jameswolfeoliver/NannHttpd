@@ -33,6 +33,10 @@ package org.nanohttpd.protocols.websockets;
  * #L%
  */
 
+import org.nanohttpd.protocols.http.IHTTPSession;
+import org.nanohttpd.protocols.http.response.Response;
+import org.nanohttpd.protocols.http.response.Status;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -40,10 +44,6 @@ import java.nio.charset.CharacterCodingException;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.logging.Level;
-
-import org.nanohttpd.protocols.http.IHTTPSession;
-import org.nanohttpd.protocols.http.response.Response;
-import org.nanohttpd.protocols.http.response.Status;
 
 public abstract class WebSocket {
 

@@ -33,15 +33,6 @@ package org.nanohttpd.junit.protocols.websockets;
  * #L%
  */
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.fail;
-
-import java.io.IOException;
-import java.io.PipedInputStream;
-import java.io.PipedOutputStream;
-import java.net.URI;
-import java.util.concurrent.TimeUnit;
-
 import org.eclipse.jetty.websocket.client.ClientUpgradeRequest;
 import org.eclipse.jetty.websocket.client.WebSocketClient;
 import org.junit.AfterClass;
@@ -51,6 +42,15 @@ import org.junit.Test;
 import org.nanohttpd.protocols.websockets.NanoWSD;
 import org.nanohttpd.samples.websockets.DebugWebSocketServer;
 import org.nanohttpd.samples.websockets.EchoSocketSample;
+
+import java.io.IOException;
+import java.io.PipedInputStream;
+import java.io.PipedOutputStream;
+import java.net.URI;
+import java.util.concurrent.TimeUnit;
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.fail;
 
 public class EchoWebSocketsTest {
 

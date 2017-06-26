@@ -33,9 +33,9 @@ package org.nanohttpd.junit.protocols.http;
  * #L%
  */
 
-import static junit.framework.Assert.assertEquals;
-
 import org.junit.Test;
+
+import static junit.framework.Assert.assertEquals;
 
 public class HttpParsingTest extends HttpServerTest {
 

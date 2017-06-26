@@ -33,16 +33,16 @@ package org.nanohttpd.junit.webserver;
  * #L%
  */
 
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.InputStream;
-import java.util.Map;
-
 import org.nanohttpd.protocols.http.IHTTPSession;
 import org.nanohttpd.protocols.http.response.Response;
 import org.nanohttpd.protocols.http.response.Status;
 import org.nanohttpd.webserver.InternalRewrite;
 import org.nanohttpd.webserver.WebServerPlugin;
+
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.InputStream;
+import java.util.Map;
 
 public class DummyPlugin implements WebServerPlugin {
 

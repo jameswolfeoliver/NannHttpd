@@ -33,7 +33,10 @@ package org.nanohttpd.junit.protocols.http.integration;
  * #L%
  */
 
-import static org.junit.Assert.fail;
+import org.junit.Test;
+import org.nanohttpd.protocols.http.IHTTPSession;
+import org.nanohttpd.protocols.http.NanoHTTPD;
+import org.nanohttpd.protocols.http.response.Response;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -41,10 +44,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import org.junit.Test;
-import org.nanohttpd.protocols.http.IHTTPSession;
-import org.nanohttpd.protocols.http.NanoHTTPD;
-import org.nanohttpd.protocols.http.response.Response;
+import static org.junit.Assert.fail;
 
 public class ShutdownTest {
 

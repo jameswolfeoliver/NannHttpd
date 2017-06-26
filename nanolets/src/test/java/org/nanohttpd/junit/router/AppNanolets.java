@@ -39,13 +39,6 @@ package org.nanohttpd.junit.router;
  * Read the source. Everything is there.
  */
 
-import java.io.BufferedInputStream;
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Map;
-
 import org.nanohttpd.protocols.http.IHTTPSession;
 import org.nanohttpd.protocols.http.response.IStatus;
 import org.nanohttpd.protocols.http.response.Response;
@@ -58,6 +51,13 @@ import org.nanohttpd.router.RouterNanoHTTPD.StaticPageHandler;
 import org.nanohttpd.router.RouterNanoHTTPD.UriResource;
 import org.nanohttpd.router.RouterNanoHTTPD.UriResponder;
 import org.nanohttpd.util.ServerRunner;
+
+import java.io.BufferedInputStream;
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Map;
 
 public class AppNanolets extends RouterNanoHTTPD {
 

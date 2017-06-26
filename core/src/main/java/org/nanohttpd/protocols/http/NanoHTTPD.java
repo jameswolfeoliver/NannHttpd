@@ -33,6 +33,18 @@ package org.nanohttpd.protocols.http;
  * #L%
  */
 
+import org.nanohttpd.protocols.http.response.Response;
+import org.nanohttpd.protocols.http.response.Status;
+import org.nanohttpd.protocols.http.sockets.DefaultServerSocketFactory;
+import org.nanohttpd.protocols.http.sockets.SecureServerSocketFactory;
+import org.nanohttpd.protocols.http.tempfiles.DefaultTempFileManagerFactory;
+import org.nanohttpd.protocols.http.tempfiles.ITempFileManager;
+import org.nanohttpd.protocols.http.threading.DefaultAsyncRunner;
+import org.nanohttpd.protocols.http.threading.IAsyncRunner;
+import org.nanohttpd.util.IFactory;
+import org.nanohttpd.util.IFactoryThrowing;
+import org.nanohttpd.util.IHandler;
+
 import java.io.Closeable;
 import java.io.IOException;
 import java.io.InputStream;
@@ -58,18 +70,6 @@ import javax.net.ssl.KeyManagerFactory;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLServerSocketFactory;
 import javax.net.ssl.TrustManagerFactory;
-
-import org.nanohttpd.protocols.http.response.Response;
-import org.nanohttpd.protocols.http.response.Status;
-import org.nanohttpd.protocols.http.sockets.DefaultServerSocketFactory;
-import org.nanohttpd.protocols.http.sockets.SecureServerSocketFactory;
-import org.nanohttpd.protocols.http.tempfiles.DefaultTempFileManagerFactory;
-import org.nanohttpd.protocols.http.tempfiles.ITempFileManager;
-import org.nanohttpd.protocols.http.threading.DefaultAsyncRunner;
-import org.nanohttpd.protocols.http.threading.IAsyncRunner;
-import org.nanohttpd.util.IFactory;
-import org.nanohttpd.util.IFactoryThrowing;
-import org.nanohttpd.util.IHandler;
 
 /**
  * A simple, tiny, nicely embeddable HTTP server in Java
@@ -162,7 +162,7 @@ public abstract class NanoHTTPD {
      * This is required as the Keep-Alive HTTP connections would otherwise block
      * the socket reading thread forever (or as long the browser is open).
      */
-    public static final int SOCKET_READ_TIMEOUT = 5000;
+    public static final int SOCKET_READ_TIMEOUT = 6000;
 
     /**
      * Common MIME type for dynamic content: plain text
@@ -545,7 +545,6 @@ public abstract class NanoHTTPD {
      *            The HTTP session
      * @return HTTP response, see class Response for details
      */
-    @Deprecated
     protected Response serve(IHTTPSession session) {
         return Response.newFixedLengthResponse(Status.NOT_FOUND, NanoHTTPD.MIME_PLAINTEXT, "Not Found");
     }
@@ -572,7 +571,7 @@ public abstract class NanoHTTPD {
 
     /**
      * Start the server.
-     * 
+     *
      * @throws IOException
      *             if the socket is in use.
      */

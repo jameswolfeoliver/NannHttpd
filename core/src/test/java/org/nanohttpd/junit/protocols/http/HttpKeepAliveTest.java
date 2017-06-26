@@ -33,15 +33,15 @@ package org.nanohttpd.junit.protocols.http;
  * #L%
  */
 
-import static junit.framework.Assert.fail;
+import org.junit.Test;
+import org.nanohttpd.protocols.http.HTTPSession;
+import org.nanohttpd.protocols.http.tempfiles.DefaultTempFileManager;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
 
-import org.junit.Test;
-import org.nanohttpd.protocols.http.HTTPSession;
-import org.nanohttpd.protocols.http.tempfiles.DefaultTempFileManager;
+import static junit.framework.Assert.fail;
 
 public class HttpKeepAliveTest extends HttpServerTest {
 

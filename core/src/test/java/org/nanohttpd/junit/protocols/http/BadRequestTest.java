@@ -33,10 +33,10 @@ package org.nanohttpd.junit.protocols.http;
  * #L%
  */
 
+import org.junit.Test;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-
-import org.junit.Test;
 
 public class BadRequestTest extends HttpServerTest {
 

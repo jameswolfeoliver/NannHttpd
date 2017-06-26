@@ -33,14 +33,14 @@ package org.nanohttpd.junit.protocols.http;
  * #L%
  */
 
-import static junit.framework.Assert.assertTrue;
+import org.junit.Test;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.FileReader;
 import java.util.List;
 
-import org.junit.Test;
+import static junit.framework.Assert.assertTrue;
 
 public class HttpPutRequestTest extends HttpServerTest {
 

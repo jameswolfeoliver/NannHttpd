@@ -33,15 +33,15 @@ package org.nanohttpd.junit.protocols.http;
  * #L%
  */
 
-import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+import org.nanohttpd.protocols.http.HTTPSession;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
-import org.junit.Test;
-import org.nanohttpd.protocols.http.HTTPSession;
+import static org.junit.Assert.assertEquals;
 
 public class HttpSessionTest extends HttpServerTest {
 

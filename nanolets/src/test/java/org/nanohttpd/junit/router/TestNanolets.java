@@ -33,17 +33,6 @@ package org.nanohttpd.junit.router;
  * #L%
  */
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.PipedInputStream;
-import java.io.PipedOutputStream;
-import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import org.apache.http.HttpEntity;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -71,6 +60,17 @@ import org.nanohttpd.router.RouterNanoHTTPD.StaticPageHandler;
 import org.nanohttpd.router.RouterNanoHTTPD.UriResource;
 import org.nanohttpd.router.RouterNanoHTTPD.UriResponder;
 import org.nanohttpd.router.RouterNanoHTTPD.UriRouter;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.PipedInputStream;
+import java.io.PipedOutputStream;
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class TestNanolets {
 
